@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.page {
+    position: relative;
+    height: 100%;
+}
+
+.h-100 {
+    height: 100vh;
+}
+
+.page > .jumbotron {
+    margin: 0;
+    border-radius: 0;
+}
+
+.page > .jumbotron > .container > .row {
+    height: 42vh;
+}
+
+.card {
+    height: 40vh;
+}
+
+.text-magenta {
+    color: #bc3c8a;
+}
+
+.bg-magenta {
+    background-color: #bc3c8a;
+}
+
+.text-teal {
+    color: #80bfd5;
+}
+
+.bg-teal {
+    background-color: #80bfd5;
+}
+
+.la-modal-body {
+    height: 90vh;
+    width: 100%;
+}
+
+.la-modal-body * {
+    cursor: none !important;
+}
+
+.la-video {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.clickable {
+    cursor: pointer;
+    position: relative;
+    transition: all 700ms;
+}
+
+.clickable:hover  {
+    height: 42vh;
+}

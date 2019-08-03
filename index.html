@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <title>Laura Ansty | Masters Degree Show</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
+</html>
+<body>
+    <div id="main" class="page">
+        <div class="jumbotron bg-dark h-100 d-flex align-items-center">
+            <div class="container text-center">
+                <div class="row">
+                    <!-- Composites -->
+                    <div class="col">
+                        <div id="composites" class="card bg-white rounded shadow clickable" data-toggle="modal" data-target="#composites-media-modal">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <div class="container">
+                                    <p class="card-text h3">Click to learn more about</p>
+                                    <p class="card-title h2 text-magenta font-weight-bold">Composites</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Study -->
+                    <div class="col">
+                        <div id="study" class="card bg-white rounded shadow clickable" data-toggle="modal" data-target="#study-media-modal">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <div class="container">
+                                    <p class="card-text h3">Click to learn more about</p>
+                                    <p class="card-title h2 text-teal font-weight-bold">This study</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Composites Video -->
+    <div class="modal fade" id="composites-media-modal" tabindex="-1" role="dialog" aria-labelledby="composites-media-modal-title" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered mw-100 w-75" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-body la-modal-body">
+                    <video id='composites-video' class='video-js la-video' preload='auto' poster='assets/composites/preview.jpg' data-setup='{}'>
+                        <source src='https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/1080/Big_Buck_Bunny_1080_10s_5MB.mp4' type='video/mp4'>
+                        <p class='vjs-no-js'>
+                                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                            <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+                        </p>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Study Video -->
+    <div class="modal fade" id="study-media-modal" tabindex="-1" role="dialog" aria-labelledby="study-media-modal-title" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered mw-100 w-75" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-body la-modal-body">
+                    <video id='study-video' class='video-js la-video' preload='auto' poster='assets/study/preview.jpg' data-setup='{}'>
+                        <source src='https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/1080/Big_Buck_Bunny_1080_10s_5MB.mp4' type='video/mp4'>
+                        <p class='vjs-no-js'>
+                             To view this video please enable JavaScript, and consider upgrading to a web browser that
+                            <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+                        </p>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='https://vjs.zencdn.net/7.6.0/video.js'></script>
+    <script src="scripts/video.js"></script>
+</body>
