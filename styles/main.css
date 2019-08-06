@@ -40,11 +40,11 @@ html, body {
 }
 
 .text-teal {
-    color: #80bfd5;
+    color: #0EA4Cf;
 }
 
 .bg-teal {
-    background-color: #80bfd5;
+    background-color: #0EA4Cf;
 }
 
 .la-modal-body {
@@ -69,4 +69,12 @@ html, body {
 
 .clickable:hover  {
     height: 42vh;
+}
+
+.card-text {
+    font-size: 2.5rem;
+}
+
+.card-title {
+    font-size: 3.25rem;
 }
